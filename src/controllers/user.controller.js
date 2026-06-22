@@ -1,5 +1,4 @@
-import prisma from "../utils/prisma";
-import userService from "../services/user.service";
+import userService from "../services/user.service.js";
 
 async function getAll(req, res) {
 	try {
