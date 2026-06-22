@@ -1,12 +1,7 @@
 
 # Keep environment variables out of version control
 .env
-
 generated/
-prisma/
-prisma/schema.prisma
-*.prisma
-prisma.config.ts
 
 # Logs
 logs

@@ -12,4 +12,4 @@ async function getUser() {
 	console.log(user);
 }
 
-getUser();
+export default prisma;
