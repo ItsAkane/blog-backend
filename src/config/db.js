@@ -7,10 +7,4 @@ const adapter = new PrismaPg({
 });
 const prisma = new PrismaClient({ adapter });
 
-async function getUser() {
-	const user = await prisma.user.findMany();
-	console.log(user);
-}
-getUser();
-
 export default prisma;
