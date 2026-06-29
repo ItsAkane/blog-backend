@@ -1,0 +1,7 @@
+CREATE TABLE users (
+        id SERIAL PRIMARY KEY,
+        login VARCHAR(150) NOT NULL UNIQUE,
+        password VARCHAR(255) NOT NULL,
+        permission VARCHAR(50),
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);

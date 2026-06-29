@@ -1,11 +1,7 @@
 
 # Keep environment variables out of version control
 .env
-
-/generated/prisma
-prisma
-*.prisma
-prisma.config.ts
+generated/
 
 # Logs
 logs
@@ -150,3 +146,4 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
