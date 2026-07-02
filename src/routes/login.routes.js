@@ -1,0 +1,10 @@
+import express from "express";
+import loginController from "../controllers/login.controller.js";
+
+const router = express.Router();
+router.post("/cadastrar/login", loginController.create);
+router.get("/login", loginController.getAll);
+router.put("/login/:id", loginController.update);
+router.delete("/delet/login/:id", loginController.remove);
+
+export default router;
