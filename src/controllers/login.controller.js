@@ -38,4 +38,16 @@ async function remove(req, res) {
 	}
 }
 
-export default { create, getAll, update, remove };
+async function logar(req, res) {
+    const { login, password } = req.body;
+
+    try {
+        const resultado = await userLogin.authLogin(login, password);
+
+        return res.status(200).json(resultado);
+    } catch (error) {
+        return res.status(401).json({ error: error.message });
+    }
+}
+
+export default { create, getAll, update, remove, logar };

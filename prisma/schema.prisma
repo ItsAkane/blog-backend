@@ -19,4 +19,5 @@ model Login {
   login String  @unique
   password  String
   permission   String 
+  createdAt  DateTime @default(now())
 }
