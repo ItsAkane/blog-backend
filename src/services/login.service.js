@@ -1,3 +1,4 @@
+import "dotenv/config";
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 import prisma from "../config/db.js";
